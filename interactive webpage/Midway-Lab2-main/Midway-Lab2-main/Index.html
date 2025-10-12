@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Index.css">
+    <title>Counter</title>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="counterContainer">
+            <div class="title">Counter</div>
+            <div id="number" class="number">0</div>
+
+
+            <!-- Progress & Goal -->
+<div class="goal-box" role="group" aria-labelledby="goalHeading">
+  <h2 id="goalHeading">Goal</h2>
+
+  <div class="goal-row">
+    <input id="goalInput" type="text" min="1" placeholder="Enter a target" />
+    <button id="setGoalBtn">Set Goal</button>
+    <button id="clearGoalBtn" class="ghost">Clear</button>
+  </div>
+
+  <div class="progress-wrap" aria-hidden="true">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+  </div>
+
+  <div class="progress-meta">
+    <span id="progressPct">0%</span>
+    <span id="goalLabel" class="muted">No goal set</span>
+  </div>
+
+  <p id="goalMsg" class="sr-only" aria-live="assertive"></p>
+</div>
+
+
+
+            <div class="buttonCon">
+                <div><button id="lowerButton" class="button">Lower count</button></div>
+                <div><button id="addButton" class="button">Add count</button></div>
+                <div><button id="resetButton" class="button">Reset</button></div>
+            </div>
+        </div>
+    <div>
+
+
+        <script src="Index.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project Buttons</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><!--Used other resources to figure out Iframe, chagpt to debug syntax between html and java 10/11/2025-->
+  <h1>Breigh Banta - Interactive Resume</h1></header>
+
+  <div class="project-container">
+    <button class="project-button" onclick="toggleDetails('project1')">Animated Line</button>
+    <div class="project-details" id="project1">
+      <p>An animated rainbow line</p>
+      <iframe class="project-iframe" src="./animatedLine/index.html" title="Animated Line"></iframe>
+    </div>
+      
+    <button class="project-button" onclick="toggleDetails('project2')">Counter</button>
+    <div class="project-details" id="project2">
+      <p>A page that allows you to pick a number goal and add or subtract from the number</p>
+      <iframe class="project-iframe" src="./Midway-Lab2-main/Midway-Lab2-main/Index.html" title="Counter"></iframe>
+    </div>
+
+    <button class="project-button" onclick="toggleDetails('project3')">Google Homepage</button>
+    <div class="project-details" id="project3">
+      <p>A redesign of the google homepage</p>
+      <iframe class="project-iframe" src="./Assignment 2/Google Homepage for Classes/index.html" title="Google Homepage"></iframe>
+    </div>
+    
+     <button class="project-button" onclick="toggleDetails('project4')">Chore Door Minigame</button>
+    <div class="project-details" id="project4">
+      <p>A minigame about avoiding the robot behind the door</p>
+      <iframe class="project-iframe" src="./BotDoor - We did in class/index.html" title="Chore Door Minigame"></iframe>
+    </div>
+  </div>
+
+  <script>
+    function toggleDetails(id) {
+      const details = document.getElementById(id);
+      details.style.display = (details.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>
+

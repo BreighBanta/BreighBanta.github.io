@@ -1,0 +1,152 @@
+body {
+  background-color: var(--background-color);
+  color: var(--text-color, white);
+  transition: background-color 0.3s, color 0.3s;
+  margin: 0px;
+}
+
+.header {
+  background-color: var(--header-color);
+  text-align: center;
+}
+
+.first-row {
+  margin-top: 42px;
+  text-align: center;
+  margin-bottom: 21px;
+}
+
+.instructions-title {
+  display: inline;
+  font-family: 'Work Sans';
+  font-size: 25px;
+  color: var(--instructions);
+}/*made text bigger*/
+
+.second-row {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.instructions-number {
+  padding-right: 25px;
+  font-family: 'Work Sans';
+  font-size: 25px;
+  color: var(--number-color);
+}
+
+.instructions-text {
+  padding: 10px;
+  font-family: 'Work Sans';
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.door-row {
+  text-align: center;
+}
+
+.door-frame {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.start-row {
+  margin: auto;
+  width: 200px;
+  height: 60px;
+  background-color: var(--buttons);
+  padding-top: 18px;
+  border-radius: 10px;
+  font-family: 'Work Sans';
+  font-size: 18px;
+  text-align: center;
+  color: #010165;
+  margin-bottom: 9px;
+  cursor: pointer;
+}/*made box round*/
+
+.score-row {
+  text-align: center;
+  width: 100%;
+}
+
+.score-text {
+  margin-right: 17px;
+  padding: 5px;
+  display: inline;
+  font-family: 'Work Sans';
+  font-size: 15px;
+  letter-spacing: 1.1px;
+  color: var(--instructions);
+}
+
+.score-box {
+  margin-top: 9px;
+  display: inline-block;
+  padding: 8px;
+  margin: 18px;
+  border-radius: 10px;
+  margin-right: 29px;
+  width: 59px;
+  background-color: var(--score-box);
+  font-family: 'Work Sans';
+  font-size: 45px;
+}/*made boxes round*/
+
+.themeButton {
+  margin: auto;
+  width: 120px;
+  height: 30px;
+  background-color: var(--buttons);
+  padding-top: 12px;
+  border-radius: 10px;
+  font-family: 'Work Sans';
+  font-size: 14px;
+  text-align: center;
+  color: #010165;
+  margin-bottom: 9px;
+  cursor: pointer;
+}
+
+:root {
+  --background-color: #010165;
+  --number-color: #00ffff;
+  --header-color: #00ffff;
+  --instructions: #00ffff;
+  --score-box: #00ffff;
+  --buttons: #eb6536;
+  --text-color: black; 
+}
+
+
+.dullMode {
+  --background-color: #595757;
+  --number-color: #7ab0b0;
+  --header-color: #7ab0b0;
+  --instructions: #7ab0b0;
+  --score-box: #7ab0b0;
+  --buttons: #d78567;
+  --text-color: #ffffff;
+}
+
+.halloween {
+  --background-color: #000000;
+  --number-color: #eb6536;
+  --header-color: #eb6536;
+  --instructions: #eb6536;
+  --score-box: #eb6536;
+  --buttons: #6f24e8;
+  --text-color: black;
+}
+
+.christmas {
+  --background-color: #9e0202;
+  --number-color: #077b01;
+  --header-color: #077b01;
+  --instructions: #077b01;
+  --score-box: #077b01;
+  --buttons: #d1ac17;
+  --text-color: #ffffff;
+}
+
