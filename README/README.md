@@ -1,13 +1,9 @@
-## 👋 Hi, I am Wu.
-
-Your introduction ...
-
-Your introduction ...
-
-Here is my Homepage your home page url</td>
+## 👋 Hi, I am Breigh.
 
 
-## 📊 Wu's GitHub
+
+
+## 📊 Breigh's GitHub
 
 |Languages |Page views|Stats|
 |--------------|------------|------------|
