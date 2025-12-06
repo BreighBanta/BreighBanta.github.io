@@ -1,0 +1,112 @@
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:center;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:100vh;
+	margin:0;
+	background-color:rgb(173, 137, 193);
+}
+
+.container{
+	width: auto;
+	margin: auto;
+	text-align: center;
+	gap: 20px;
+	flex-direction:column;
+	align-items:center;
+	justify-content: center;
+}
+
+.scoreBoard {
+	align-items: center;
+	justify-content: space-between;
+}
+
+.game {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+.board{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap:10px;
+	padding-bottom: 30px;
+}
+
+.cell{
+    width: 100px;
+    height: 100px;
+    background: rgb(225, 220, 226);
+    border: 2px solid #520964;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;	
+}
+
+.cell:hover {
+	background: rgb(202, 151, 221);
+	transform: scale(1.05);
+}
+
+.cell:active {
+    background-color: #ddd;
+}
+
+@media (max-width: 600px) {
+    .cell {
+        width: 80px;
+        height: 80px;
+        font-size: 1.5em;
+    }
+}
+
+@keyframes select {
+	0% { transform: scale(0); opacity: 0; }
+	80% { transform: scale(1.1); opacity: 1; }
+	100% { transform: scale(1); }
+}
+
+.cell.show {
+	animation: select 0.3s ease;
+}
+
+#status{
+	margin:15px;
+	font-size: 1.5em;
+	color:white;
+	font-weight: bolder;
+}
+button{
+	padding: 10px;
+	font-size:1.2em;
+	background-color:rgb(193, 190, 194);
+	color:rgb(0, 0, 0);
+	border: solid 2px black;
+	border-radius: 10px;
+	cursor:pointer;
+	
+}
+button:hover {
+    background-color: rgb(202, 151, 221);
+}
+
+span {
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+}
+
+.player {
+	font-weight: bold;
+	font-size: 1.5em;
+	color: whitesmoke;
+}
+
+

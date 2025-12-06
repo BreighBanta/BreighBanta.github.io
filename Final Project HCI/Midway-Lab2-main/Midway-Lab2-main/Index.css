@@ -1,0 +1,71 @@
+ 
+body{
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    background:url("/Midway-Lab2-main/mainBcg.jpeg") center/cover no-repeat fixed;
+}
+
+
+
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.counterContainer{
+    border: 1px solid white;
+    background: url("/Midway-Lab2-main/mainBcg.jpeg");
+    height: 600px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.75);
+}
+.title{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+.number{
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(68, 67, 67);
+}
+.button{
+    background-color: rgb(24, 66, 143);
+    color: white;
+    padding: 10px 8px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+.buttonCon{
+    display: flex;
+    gap: 10px;
+}
+.button:hover{
+    background-color: rgb(172, 195, 236);
+    border: 1px solid rgb(172, 195, 236);
+}
+
+.goal-box{margin-top:24px;padding:16px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);border-radius:10px}
+.goal-row{display:flex;gap:8px;align-items:center;margin-bottom:12px}
+#goalInput{flex:1;padding:10px 12px;font-size:1rem;border-radius:8px;border:1px solid #c9c3b6;background:rgba(255,255,255,.9)}
+#setGoalBtn,#clearGoalBtn{padding:10px 14px;border-radius:8px;border:none;cursor:pointer;font-weight:600;box-shadow:0 2px 0 rgba(0,0,0,.15)}
+#setGoalBtn{background:#1e3a8a;color:#fff}
+#clearGoalBtn.ghost{background:transparent;color:#1e3a8a;border:1px solid #1e3a8a}
+
+.progress-wrap{position:relative;width:100%;height:14px;background:rgba(0,0,0,.15);border-radius:999px;overflow:hidden}
+.progress-bar{height:100%;width:0%;background:linear-gradient(90deg,#2563eb,#22c55e);transition:width 220ms ease}
+.progress-meta{display:flex;justify-content:space-between;margin-top:8px;font-weight:700}
+.muted{opacity:.8}
+
+.goal-reached{animation:pulse 900ms ease-in-out 2}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(34,197,94,.6)}100%{box-shadow:0 0 0 18px rgba(34,197,94,0)}}
+
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,1px,1px);white-space:nowrap;border:0}

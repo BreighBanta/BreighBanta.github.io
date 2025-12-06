@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project Buttons</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><!--Used other resources to figure out Iframe, chagpt to debug syntax between html and java 10/11/2025-->
+  <h1>Breigh Banta - Interactive Resume</h1></header>
+    <!--added an about me section 12/5/2025-->
+  <h2>About Me</h2>
+    <p class="aboutText">Hi there! My name is Breigh Banta. I am currently a student at Midway University studying Computer Science and Equine Management. Below are some projects from course CSE 300: Human Computer Interaction.</p>
+  <div class="project-container">
+    <button class="project-button" onclick="toggleDetails('project1')">Animated Line</button>
+    <div class="project-details" id="project1">
+      <p>An animated rainbow line</p>
+      <iframe class="project-iframe" src="./animatedLine/index.html" title="Animated Line"></iframe>
+    </div>
+      
+    <button class="project-button" onclick="toggleDetails('project2')">Counter</button>
+    <div class="project-details" id="project2">
+      <p>A page that allows you to pick a number goal and add or subtract from the number</p>
+      <iframe class="project-iframe" src="./Midway-Lab2-main/Midway-Lab2-main/Index.html" title="Counter"></iframe>
+    </div>
+
+    <button class="project-button" onclick="toggleDetails('project3')">Google Homepage</button>
+    <div class="project-details" id="project3">
+      <p>A redesign of the google homepage</p>
+      <iframe class="project-iframe" src="./Assignment 2/Google Homepage for Classes/index.html" title="Google Homepage"></iframe>
+    </div>
+    
+     <button class="project-button" onclick="toggleDetails('project4')">Chore Door Minigame</button>
+    <div class="project-details" id="project4">
+      <p>A minigame about avoiding the robot behind the door</p>
+      <iframe class="project-iframe" src="./BotDoor - We did in class/index.html" title="Chore Door Minigame"></iframe>
+    </div>
+
+    <!--Added past four projects to midterm project 12/5/2025-->
+
+    <button class="project-button" onclick="toggleDetails('project5')">Memory game</button>
+    <div class="project-details" id="project5">
+      <p>A educational memory card game about horse coat colors</p>
+      <iframe class="project-iframe" src="./Assignment7/index.html" title="Memory game"></iframe>
+    </div>
+
+    <button class="project-button" onclick="toggleDetails('project6')">Color Wheel</button>
+    <div class="project-details" id="project6">
+      <p>A color wheel that displays psychology information</p>
+      <iframe class="project-iframe" src="./Assignment 6/index.html" title="Color Wheel"></iframe>
+    </div>
+
+    <button class="project-button" onclick="toggleDetails('project7')">Door reveal</button>
+    <div class="project-details" id="project7">
+      <p>A door that reveals different locations</p>
+      <iframe class="project-iframe" src="./Lab 4-2/index.html" title="Door Reveal"></iframe>
+    </div>
+
+    <button class="project-button" onclick="toggleDetails('project8')">Tic Tac Toe</button>
+    <div class="project-details" id="project8">
+      <p>A purple themed tic tac toe game</p>
+      <iframe class="project-iframe" src="./TicTacToe_Doing/index.html" title="Tic Tac Toe"></iframe>
+    </div>
+
+    <button class="project-button" onclick="toggleDetails('project9')">HCI song</button>
+    <div class="project-details" id="project9">
+      <p>An AI generated song about HCI and people centered design</p>
+      <audio controls><source src="./music/HCI song.mp3" title="HCI song" type="audio/mpeg"></audio>
+    </div>
+  </div>
+
+  <script>
+    function toggleDetails(id) {
+      const details = document.getElementById(id);
+      details.style.display = (details.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>
